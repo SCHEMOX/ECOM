@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin-bottom: 5rem;
+}
+
+.col-md-6 img {
+    height: 80%;
+    width: 80%;
+}
+
+@media (min-width: 992px) {
+
+    .navbar-nav{
+        margin-left: 30rem;
+    }
+
+    .dropdown-menu {
+        display: block;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        opacity: 1;
+    }
+}
