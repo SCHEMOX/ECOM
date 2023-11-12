@@ -2,10 +2,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: rgba(216, 147, 147, 0.5)
 }
 
-.navbar {
-    margin-bottom: 5rem;
+.landing-page {
+    height: 100vh;
 }
 
 .col-md-6 img {
@@ -13,9 +14,17 @@ body {
     width: 80%;
 }
 
-@media (min-width: 992px) {
+.col-lg {
+    margin-bottom: 1rem;
+}
 
-    .navbar-nav{
+.card:hover {
+    box-shadow: #8c8c8c54 0.1rem 0.5rem 0.7rem 0.5rem;
+}
+    
+@media (min-width: 1200px) {
+
+    .navbar-nav {
         margin-left: 30rem;
     }
 
