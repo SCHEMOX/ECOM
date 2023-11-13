@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgba(216, 147, 147, 0.5)
+    background: rgba(212, 212, 212, 0.143)
 }
 
 .landing-page {
@@ -14,12 +14,54 @@ body {
     width: 80%;
 }
 
+.products {
+    max-height: 200vh;
+}
+
 .col-lg {
     margin-bottom: 1rem;
 }
 
+.dark-mode {
+    background-color: #212529;
+}
+
+.fa-moon {
+    font-size: 2.5rem;
+    color: white;
+    padding: 20% 24%;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    text-overflow: ellipsis;
+    transition: all ease-in-out 0.2s;
+}
+
+.card img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
 .card:hover {
     box-shadow: #8c8c8c54 0.1rem 0.5rem 0.7rem 0.5rem;
+}
+
+.circle {
+    width: 4rem;
+    height: 4rem;
+    background-color: #3d3d3d;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+    border: none;
+    box-shadow: #00000071 2px 2px 15px 2px;
+}
+
+.circle:active {
+    box-shadow: #00000071 0.2px 0.2px 1.5px 0.2px;
 }
     
 @media (min-width: 1200px) {
@@ -29,8 +71,8 @@ body {
     }
 
     .dropdown-menu {
-        display: block;
         opacity: 0;
+        display: block;
         transition: all 0.5s;
     }
 
@@ -38,5 +80,12 @@ body {
         display: block;
         margin-top: 0;
         opacity: 1;
+    }
+}
+
+@media (min-width: 960px) {
+    .col-lg {
+        max-width: 33%;
+        max-height: 20%;
     }
 }
