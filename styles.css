@@ -2,11 +2,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgba(212, 212, 212, 0.143)
+    background: rgba(185, 185, 185, 0.143)
 }
 
 .landing-page {
+    padding: 5rem;
     height: 100vh;
+    background: linear-gradient(45deg, #8080804d,#b5b5b54d,#dad9d94d,#ffffff7d);
+    position: relative;
+    z-index: -1;
 }
 
 .col-md-6 img {
@@ -14,16 +18,8 @@ body {
     width: 80%;
 }
 
-.products {
-    max-height: 200vh;
-}
-
 .col-lg {
     margin-bottom: 1rem;
-}
-
-.dark-mode {
-    background-color: #212529;
 }
 
 .fa-moon {
@@ -32,21 +28,26 @@ body {
     padding: 20% 24%;
 }
 
+.products {
+    background-color: white;
+}
+
 .card {
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     text-overflow: ellipsis;
     transition: all ease-in-out 0.2s;
 }
 
 .card img {
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
 .card:hover {
     box-shadow: #8c8c8c54 0.1rem 0.5rem 0.7rem 0.5rem;
 }
+
 
 .circle {
     width: 4rem;
@@ -65,6 +66,10 @@ body {
 }
     
 @media (min-width: 1200px) {
+
+    .navbar-brand {
+        margin-left: 5rem;
+    }
 
     .navbar-nav {
         margin-left: 30rem;

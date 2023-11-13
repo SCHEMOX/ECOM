@@ -1,4 +1,39 @@
+window.addEventListener('scroll', () => {
+  let { scrollY } = window;
 
+  document.getElementById("landing-page").style.top = 0.7 * scrollY + 'px';
+  // sky.style.top = -1.2 * scrollY + 'px';
+  // midnight.style.top = (120 + -1.5 * scrollY) + 'px';
+});
+
+
+// NAVBAR ANIMATION
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    
+    document.getElementById("nav").setAttribute("style", "transition: all ease-in-out 0.5s;");
+    
+    var nav = document.getElementById("nav");
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("nav").setAttribute("style", "box-shadow:#8c8c8c54 0.1rem 0.5rem 0.7rem 0.3rem;");
+      } else {
+        document.getElementById("nav").setAttribute("style", "box-shadow: none;");
+      }
+    }
+
+  function toggleDarkMode() {
+    document.getElementById("nav").classList.toggle("navbar-dark");
+    document.getElementById("nav").classList.toggle("bg-dark");
+    document.body.classList.toggle("bg-dark");
+    document.getElementById("product").classList.toggle("bg-dark");
+    document.getElementById("landing-page").classList.toggle("text-light");
+    document.getElementById("modal-content").classList.toggle("text-light");
+    document.getElementById("modal-content").classList.toggle("bg-dark");
+  }  
+  
   //PRODUCT
 
   // Product data
@@ -45,7 +80,7 @@
       col.className = "col-lg";
       col.innerHTML = `
         <div class="card">
-          <img src="${product.image}" class="card-img-top" alt="${product.title}" loading="lazy">
+          <img src="${product.image}" class="card-img-top" alt="${product.title}">
           <div class="card-body">
             <h5 class="card-title">${product.title}</h5>
             <p class="card-text">${product.description}</p>

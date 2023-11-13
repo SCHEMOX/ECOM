@@ -14,15 +14,15 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
 
-    <title>E-Commerce Website</title>
+    <title>ECOM</title>
   </head>
-  <body>
+  <body class="bg-light">
 
     <!-- Navbar -->
     <nav id="nav" class="navbar navbar-expand-xl fixed-top navbar-light bg-light">
       <div class="container">
         <div>
-          <a class="navbar-brand" href="#">E-Commerce Website</a>
+          <a class="navbar-brand" href="#">ECOM</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,36 +56,37 @@
       </div>
     </nav>
 
-  
-    <div class="container landing-page d-flex flex-row align-items-center justify-content-evenly">
-      <div class="col-md-6">
-        <h2>Welcome to Our E-Commerce Website</h2>
-        <div class="dropdown-divider" style="background-color: black; width: 80%;"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="container-fluid d-flex flex-row align-items-center justify-content-evenly landing-page" id="landing-page">
+        <div class="col-md-6">
+          <h1>Welcome to ECOM</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/online_shopping.svg" alt="online Shopping" loading="lazy">
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="./img/online_shopping.svg" alt="online Shopping">
-      </div>
-    </div>
 
-    <div class="container products">
-      <div class="row" id="firstRow">
-      </div>
+    <div class="container-fluid products" id="product">
+      <div class="container">
+        <h1 class="text-center" style="font-size: 5vw;margin: 3.5rem;">Trending</h1>
+        <div class="row" id="firstRow">
+        </div>
     
-      <div class="row" id="secondRow">
+        <div class="row" id="secondRow">
+        </div>
       </div>
     </div>
     
     <!-- Modal -->
     <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="product-title" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+        <div class="modal-content" id="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="product-title">Product Title</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img src="" class="card-img-top" alt="Product Image" id="productImage">
+            <img src="" class="card-img-top" alt="Product Image" id="productImage" loading="lazy">
             <p class="card-text" id="productDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptate! Perferendis, officiis, unde vero cupiditate commodi distinctio minus necessitatibus quos velit nobis et dignissimos reiciendis. Assumenda illo ad pariatur libero.</p>
           </div>
           <div class="modal-footer">
