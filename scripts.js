@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("nav").setAttribute("style", "box-shadow:#8c8c8c54 0.1rem 0.5rem 0.7rem 0.3rem;");
       } else {
-        document.getElementById("nav").setAttribute("style", "box-shadow: none;");
+        document.getElementById("nav").setAttribute("style", "box-shadow: none;background: !important;");
       }
     }
 
@@ -29,9 +29,17 @@ window.addEventListener('scroll', () => {
     document.getElementById("nav").classList.toggle("bg-dark");
     document.body.classList.toggle("bg-dark");
     document.getElementById("product").classList.toggle("bg-dark");
+    var product_card = document.getElementsByClassName("card");
+    for(var i = 0; i < product_card.length; i++) 
+      product_card[i].classList.toggle("bg-dark");
+    var product_card_text = document.getElementsByClassName("card-body");
+    for(var i = 0; i < product_card_text.length; i++) 
+      product_card_text[i].classList.toggle("text-light"); 
     document.getElementById("landing-page").classList.toggle("text-light");
+    document.getElementById("landing-page").classList.toggle("landing-page-dark");
     document.getElementById("modal-content").classList.toggle("text-light");
     document.getElementById("modal-content").classList.toggle("bg-dark");
+    document.getElementById("btn-close").classList.toggle("bg-light");
   }  
   
   //PRODUCT
