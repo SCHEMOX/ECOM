@@ -11,7 +11,7 @@ body {
 }
 
 .landing-page {
-    padding: 25vw;
+    padding: 35vw 25vw 25vw 25vw 25vw;
     background: linear-gradient(0deg, #808080bd 10%,#b5b5b5bd 20%,#dad9d9bd 30%,#ffffffbd 40%), 
     linear-gradient(45deg, #b5b5b5bd 40%, #dad9d9bd 10%, #ffffffbd 20%, #808080bd 30%), 
     linear-gradient(90deg, #dad9d9bd 30%, #ffffffbd 40%, #808080bd 10%, #b5b5b5bd 20%), 
@@ -23,7 +23,7 @@ body {
 
 
 .landing-page-dark { 
-    padding: 25vw; 
+    padding: 35vw 25vw 25vw 25vw 25vw; 
     position: relative; 
     z-index: -1; 
     background: linear-gradient(0deg, #8080809f 10%,#5f5f5f9f 20%,#3838389f 30%,#0000009f 40%), 
