@@ -7,7 +7,7 @@ body {
 
 .landing-page {
     padding: 5rem;
-    height: 100vh;
+    height: max-content;
     background: linear-gradient(45deg, #8080804d,#b5b5b54d,#dad9d94d,#ffffff7d);
     position: relative;
     z-index: -1;
