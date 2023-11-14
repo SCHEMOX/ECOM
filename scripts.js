@@ -6,6 +6,7 @@ window.addEventListener('scroll', () => {
   // midnight.style.top = (120 + -1.5 * scrollY) + 'px';
 });
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // NAVBAR ANIMATION
     window.onscroll = function () {
