@@ -1,14 +1,15 @@
-window.addEventListener('scroll', () => {
-  let { scrollY } = window;
+ window.addEventListener('scroll', () => {
+   let { scrollY } = window;
 
-  document.getElementById("landing-page").style.top = 0.7 * scrollY + 'px';
-  // sky.style.top = -1.2 * scrollY + 'px';
-  // midnight.style.top = (120 + -1.5 * scrollY) + 'px';
-});
+   document.getElementById("landing-page").style.top = 0.3 * scrollY + 'px';
+   document.getElementById("products").style.marginTop = -0.6 * scrollY + 'px';
+   document.querySelector("footer").style.scrollMargin =  -0.1 * scrollY + 'px';
+   // midnight.style.top = (120 + -1.5 * scrollY) + 'px';
+ });
 
-document.getElementById("year").innerHTML = new Date().getFullYear();
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 
-// NAVBAR ANIMATION
+  // NAVBAR ANIMATION
     window.onscroll = function () {
       scrollFunction();
     };
@@ -41,6 +42,9 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
     document.getElementById("modal-content").classList.toggle("text-light");
     document.getElementById("modal-content").classList.toggle("bg-dark");
     document.getElementById("btn-close").classList.toggle("bg-light");
+    document.getElementById("products").classList.toggle("text-light");
+    document.querySelector("footer").classList.toggle("bg-dark");
+    document.getElementById("aboutUs").classList.toggle("text-light");
   }  
   
   //PRODUCT
