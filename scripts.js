@@ -1,5 +1,5 @@
-window.addEventListener('scroll', () => {
-  let { scrollY } = window;
+ window.addEventListener('scroll', () => {
+   let { scrollY } = window;
 
   document.getElementById("landing-page").style.top = 0.5 * scrollY + 'px';
 });
