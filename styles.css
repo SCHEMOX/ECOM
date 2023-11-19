@@ -101,6 +101,19 @@ body {
     box-shadow: #00000071 0.2px 0.2px 1.5px 0.2px;
 }
 
+.aboutus{
+    box-shadow: inset #0000006e 0px 1px 10px 0.5px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+
+.aboutus .container {
+    padding: 1rem;
+    height: 100%; 
+    width: 50%;
+}
+
 footer {
     background-color: white;
     box-shadow: #0000006e 0px -1px 10px 0.5px;
