@@ -105,7 +105,6 @@ body {
     box-shadow: inset #0000006e 0px 1px 10px 0.5px;
     position: relative;
     background-color: white;
-    z-index: -1;
 }
 
 .aboutus .container {
