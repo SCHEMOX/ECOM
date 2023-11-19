@@ -14,34 +14,21 @@ body {
     font-size: 2rem;
 }
 
-.aboutus{
-    padding: 2rem;
-    height: max-content;
-    box-shadow: inset #0000006e 0px 1px 10px 0.5px;
-    position: relative;
-    z-index: 1;
-}
-
-.aboutus .container {
-    height: 100%; 
-    padding:0 20vw;
-}
-
 .landing-page {
     padding: 26vw 25vw 25vw 25vw;
-    position: relative;
-    z-index: -3;
     background: linear-gradient(0deg, #808080bd 10%,#b5b5b5bd 20%,#dad9d9bd 30%,#ffffffbd 40%), 
     linear-gradient(45deg, #b5b5b5bd 40%, #dad9d9bd 10%, #ffffffbd 20%, #808080bd 30%), 
     linear-gradient(90deg, #dad9d9bd 30%, #ffffffbd 40%, #808080bd 10%, #b5b5b5bd 20%), 
     linear-gradient(135deg, #ffffffbd 20%, #808080bd 30%, #b5b5b5bd 40%, #dad9d9bd 10%), 
     linear-gradient(180deg, #808080bd 10%, #b5b5b5bd 20%, #dad9d9bd 30%, #ffffffbd 40%);
+    position: relative;
+    z-index: -1;
 }
 
 .landing-page-dark {
     padding: 26vw 25vw 25vw 25vw; 
-    position: relative;
-    z-index: -3;
+    position: relative; 
+    z-index: -1; 
     background: linear-gradient(0deg, #8080809f 10%,#5f5f5f9f 20%,#3838389f 30%,#0000009f 40%), 
     linear-gradient(45deg, #5f5f5f9f 40%, #3838389f 10%, #0000009f 20%, #8080809f 30%), 
     linear-gradient(90deg, #3838389f 30%, #0000009f 40%, #8080809f 10%, #5f5f5f9f 20%), 
@@ -69,9 +56,7 @@ body {
 }
 
 .products {
-    background: white;
-    position: relative;
-    z-index: -1;
+    background: #fff;
 }
 
 .card {
@@ -116,10 +101,24 @@ body {
     box-shadow: #00000071 0.2px 0.2px 1.5px 0.2px;
 }
 
+.aboutus{
+    box-shadow: inset #0000006e 0px 1px 10px 0.5px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+
+.aboutus .container {
+    padding: 1rem;
+    height: 100%; 
+    width: 50%;
+}
+
 footer {
     background-color: white;
     box-shadow: #0000006e 0px -1px 10px 0.5px;
 }
+
     
 @media (min-width: 1200px) {
 
