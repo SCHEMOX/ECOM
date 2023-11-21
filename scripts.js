@@ -1,7 +1,7 @@
 window.addEventListener('scroll', () => {
   let { scrollY } = window;
 
-  document.getElementById("landing-page").style.top = 0.5 * scrollY + 'px';
+  document.getElementById("landing-page").style.top = `${scrollY * 0.5}px`;
 });
 
  document.getElementById("year").innerHTML = new Date().getFullYear();
